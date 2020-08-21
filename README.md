@@ -1,7 +1,7 @@
 # Game-of-Life
 **Conway's Game of Life :grinning:**
 <br />
-![Life of game](https://github.com/mo1ein/Game-of-Life/lifeofgame.gif)
+![Life of game](./lifeofgame.gif)
 ## Usage
 ```
 git clone https://github.com/mo1ein/Game-of-Life.git
