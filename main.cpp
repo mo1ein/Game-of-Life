@@ -4,16 +4,14 @@ using namespace std ;
 
 int col=40,row=70;
 
-void create (int arr[][70])
-{
+void create (int arr[][70]){
     for(int i=0;i<col;++i)
         for(int j=0;j<row;++j)
             arr[i][j]=rand() % 2;
 }
 
 
-int count (int arr[][70],int &x,int &y)
-{
+int count (int arr[][70],int &x,int &y){
     int sum = 0;
     for (int i = -1; i < 2; i++){
         for (int j = -1; j < 2; j++){
@@ -27,8 +25,7 @@ int count (int arr[][70],int &x,int &y)
 }
 
 
-void check(int arr[][70])
-{
+void check(int arr[][70]){
     for(int i=0;i<col;++i){
         for(int j=0;j<row;++j){
 
@@ -44,8 +41,7 @@ void check(int arr[][70])
 }
 
 
-void draw(int arr[][70])
-{
+void draw(int arr[][70]){
     for(int i=0;i<col;++i){
         for(int j=0;j<row;++j){
 
@@ -69,8 +65,7 @@ int main ()
     (speed ? speed : speed=0.2);
     speed*=1000000;
     create(arr);
-    while(true)
-    {
+    while(true){
         draw(arr);
         check(arr);
         usleep(speed);
